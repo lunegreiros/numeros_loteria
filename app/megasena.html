@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Jogos da Megasena</title>
+</head>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<body>
+    <main class="main_bg">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- BRAND -->
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- MENU hamburguer -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Listagem do MENU -->
+                <div class="d-flex justify-content-between flex-fill">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <button id="btn_megasena" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='megasena.html';">Mega-Sena</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_lotofacil" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='temp.html';">Lotofácil</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_quina" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='quina.html';">Quina</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_lotomania" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='lotomania.html';">Lotomania</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_timemania" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='timemania.html';">Timemania</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_dupla" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='dupla.html';">Dupla Sena</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btn_sorte" type="button" class="btn btn-outline-light px-4 mx-1 rounded-pill" onclick="location.href='sorte.html';">Dia de Sorte</button>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="#"><small>share</small></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="conteudo" class="">
+            <section class="show_numbers">
+                <article class="mb-3 show_logo d-flex flex-column align-items-center padding_large">
+                    <div class="txt_padrao_light mb-0">Gerador de números aleatórios para jogos na loteria</div>
+                    <div class="nome_loteria mb-2"><img src="img/shamrock.svg" alt="" style="height: 70px" class="mr-2"><em>MEGA-SENA</em></div>
+                </article>
+
+                <!-- NUMEROS -->
+                <article id="jogo" class="exibir_numeros">
+                    <!-- nunmeros são carregados via javascript exibir_numeros() -->
+                </article>
+
+
+                <!-- INFOS extras -->
+                <article class="d-flex justify-content-around align-items-center txt_padrao_light mt-3  limitar_largura2">
+                    <div class="txt_acumulou">prêmio acumulado!</div>
+                    <div><small>prêmio previsto:</small> <span class="txt_premio">40.000.000</span>,00</div>
+                    <div><small>próximo sorteio:</small> <span class="txt_data">23/23/23</span></div>
+                </article>
+            </section>
+            <!-- PARTE DE BAIXO -> opções abaixo com novas dezenas / fazer jogo / etc... -->
+            <section class="show_options">
+                <article class="d-flex justify-content-between txt_padrao_light mt-3">
+                    <aside class="d-flex">
+                        <div class="d-flex align-items-center ml-3">
+                            <i data-feather="arrow-down-circle" class="icons mx-2"></i><small>Sobre o site</small>
+                        </div>
+                        <div class="d-flex align-items-center mx-4">
+                            |
+                        </div>
+                        <div>
+                            <p class="mb-0"><small>Faça seu jogo no site <strong>OFICIAL</strong> da Caixa!</small></p>
+                            <a href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=cross&utm_campaign=loteriasonline&utm_term=mega#/mega-sena" target="_blank" class="btn btn-light btn-sm rounded-pill px-4" style="color: black">Aposte já!</a>
+                        </div>
+
+                    </aside>
+                    <aside class="d-flex align-items-center ml-3">
+                        <div>
+                            <p class="mb-0"><small>Novo jogo aleatório:</small></p>
+                            <button id="gerar_novos_numeros" onclick="gerar_novos_numeros()" class="btn btn-light btn-sm rounded-pill px-4">Gerar novos números!</button>
+                        </div>
+                        <div class="d-flex align-items-center mx-4">
+                            |
+                        </div>
+                        <div id="opções_dezenas" class="mr-5">
+                            <p class="mb-0"><small>Dezenas:</small></p>
+                            <button id="dez_06" onclick="gerar_numeros(6)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
+                            <button id="dez_07" onclick="gerar_numeros(7)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
+                            <button id="dez_08" onclick="gerar_numeros(8)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">08</button>
+                            <button id="dez_09" onclick="gerar_numeros(9)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">09</button>
+                            <button id="dez_10" onclick="gerar_numeros(10)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">10</button>
+                            <button id="dez_11" onclick="gerar_numeros(11)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">11</button>
+                            <button id="dez_12" onclick="gerar_numeros(12)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">12</button>
+                            <button id="dez_13" onclick="gerar_numeros(13)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">13</button>
+                            <button id="dez_14" onclick="gerar_numeros(14)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">14</button>
+                            <button id="dez_15" onclick="gerar_numeros(15)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">15</button>
+                        </div>
+                    </aside>
+                </article>
+
+            </section>
+        </header>
+
+
+    </main>
+
+    <!-- CONTEUDO COM TEXTOS -->
+    <section>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+
+
+</body>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/gerar_numeros.js"></script>
+<script src="js/exibir_numeros.js"></script>
+<script>
+    $("#btn_megasena").addClass("btn_active");
+    feather.replace();
+
+    // mudar a classe ACTIVE
+    var header = document.getElementById("opções_dezenas");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("dezena_active");
+            current[0].className = current[0].className.replace(" dezena_active", "");
+            this.className += " dezena_active";
+        });
+    }
+
+    // gerar os primeiros numeros
+    gerar_numeros(6);
+</script>
+
+
+</html>

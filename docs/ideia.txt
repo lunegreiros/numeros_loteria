@@ -1,0 +1,27 @@
+Ideia:
+
+Um serviço que exibe numeros aleatórios para jogos na loteria.
+Diversos jogos: mega-sena, lotofacil, quina etc... etc.
+
+- Cada página - um jogo
+- design minimalista
+- "ACUMULOU"
+- premio do proximo sorteio
+- data do proximo sorteio
+- e infos para apostar (o que precisa, onde)
+- criar um algoritmo de números randômicos baseados nos resultados dos jogos anteriores.
+- o Adsense exige conteúdo na pagina = como funciona os jogos, as probabilidades
+
+SERVICO IGUAL:
+https://www.somatematica.com.br/megasena.php
+
+
+
+Tipos de jogos:
+Megasena
+Lotofacil
+Quina
+Lotomania
+Time mania
+Dupla sena
+Dia de sorte

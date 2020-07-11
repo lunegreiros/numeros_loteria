@@ -1,0 +1,115 @@
+.main_bg {
+  background: #0e67b5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0e67b5, #3cb5af); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0e67b5, #3cb5af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 97vh;
+  width: 100%;
+}
+.btn_active {
+  background-color: white;
+  color: rgb(67, 67, 67);
+}
+#conteudo {
+  height: calc(97vh - 58px);
+}
+.show_numbers {
+  height: 90%;
+}
+.show_options {
+  height: 10%;
+}
+.show_logo {
+  /* height: 35%; */
+}
+.numbers {
+  /* background: #e3e3e3; */
+  background: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #292929;
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  /* font-family: "Heebo", sans-serif; */
+  font-family: "Roboto", sans-serif;
+
+  line-height: 120px;
+  width: 120px;
+  font-size: 70px;
+}
+
+.txt_padrao_light {
+  font-family: "Heebo", sans-serif;
+  font-weight: 200;
+  color: rgba(161, 250, 249, 0.7);
+}
+.txt_padrao_dark {
+  font-family: "Heebo", sans-serif;
+  font-weight: 200;
+  color: rgb(24, 24, 24);
+}
+.nome_loteria {
+  font-family: "Heebo", sans-serif;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 4rem;
+  color: rgb(234, 234, 234);
+  /* text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); */
+}
+.icons {
+  height: 40px;
+  width: 40px;
+}
+.txt_acumulou {
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  /* color: #052b4a; */
+  color: #a1faf9;
+}
+.txt_data,
+.txt_premio {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #a1faf9;
+}
+.txt_premio {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.dezena_active {
+  background-color: white;
+  color: rgb(67, 67, 67);
+}
+.limitar_largura {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.limitar_largura2 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.padding_large {
+  padding-top: 10%;
+}
+.exibir_numeros {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.exibir_numeros > div {
+  flex: 1 1 0px;
+}
+
+#jogo {
+  text-align: center;
+}
+#jogo div {
+  display: inline-block;
+}

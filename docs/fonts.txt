@@ -1,0 +1,7 @@
+Google fonts
+
+https://fonts.google.com/specimen/Quicksand?category=Sans+Serif,Display
+
+Ou
+https://fonts.google.com/specimen/Heebo?category=Sans+Serif,Display
+Peso: 800 extra-bold

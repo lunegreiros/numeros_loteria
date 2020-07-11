@@ -1,0 +1,10 @@
+Add Active Class to Current Element
+
+https://www.w3schools.com/howto/howto_js_active_element.asp
+
+Ou use as opções de 'radio buttons' no bootstrap
+Para transformer 'buttons' em 'radio buttons'
+
+https://getbootstrap.com/docs/4.0/components/buttons/
+Ou aqui
+https://getbootstrap.com/docs/4.0/components/button-group/
