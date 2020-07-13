@@ -1,7 +1,7 @@
 .main_bg {
-  background: #0e67b5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0e67b5, #3cb5af); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0e67b5, #3cb5af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   min-height: calc(97vh - 60px);
   height: auto;
@@ -32,9 +32,9 @@
   /* font-family: "Heebo", sans-serif; */
   font-family: "Roboto", sans-serif;
 
-  line-height: 120px;
-  width: 120px;
-  font-size: 70px;
+  line-height: 78px;
+  width: 78px;
+  font-size: 45px;
 }
 
 .txt_padrao_light {
@@ -131,27 +131,16 @@
 }
 
 /* MEdia */
-@media screen and (max-width: 1440px) {
-  .numbers {
-    line-height: 110px;
-    width: 110px;
-    font-size: 60px;
-  }
-}
-@media screen and (max-width: 1240px) {
-  #opcoes_dezenas,
+@media screen and (max-width: 1024px) {
   #sobre_o_site_link {
     display: none;
-  }
-  #opcoes_dezenas_dark {
-    display: block;
   }
 }
 @media screen and (max-width: 768px) {
   .numbers {
-    line-height: 100px;
-    width: 100px;
-    font-size: 60px;
+    line-height: 65px;
+    width: 65px;
+    font-size: 35px;
   }
   #recarregar_pagina {
     /* displays: flex; */
@@ -174,6 +163,11 @@
   }
   .nome_loteria > img {
     height: 50px;
+  }
+  .numbers {
+    line-height: 55px;
+    width: 55px;
+    font-size: 30px;
   }
 
   #jogo {

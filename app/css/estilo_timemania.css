@@ -1,7 +1,7 @@
 .main_bg {
-  background: #0e67b5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0e67b5, #3cb5af); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0e67b5, #3cb5af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #cac531; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f3f9a7, #cac531); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f3f9a7, #cac531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   min-height: calc(97vh - 60px);
   height: auto;
@@ -32,15 +32,15 @@
   /* font-family: "Heebo", sans-serif; */
   font-family: "Roboto", sans-serif;
 
-  line-height: 120px;
-  width: 120px;
+  line-height: 110px;
+  width: 110px;
   font-size: 70px;
 }
 
 .txt_padrao_light {
   font-family: "Heebo", sans-serif;
   font-weight: 200;
-  color: rgba(255, 255, 255, 0.7);
+  color: #302e0a;
 }
 .txt_padrao_dark {
   font-family: "Heebo", sans-serif;
@@ -52,11 +52,12 @@
   font-style: oblique;
   font-weight: 600;
   font-size: 4rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #3c3a0e;
   /* text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); */
 }
 .nome_loteria > img {
   height: 70px;
+  fill: #302e0a;
 }
 .icons {
   height: 40px;
@@ -131,14 +132,7 @@
 }
 
 /* MEdia */
-@media screen and (max-width: 1440px) {
-  .numbers {
-    line-height: 110px;
-    width: 110px;
-    font-size: 60px;
-  }
-}
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   #opcoes_dezenas,
   #sobre_o_site_link {
     display: none;
@@ -148,11 +142,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .numbers {
-    line-height: 100px;
-    width: 100px;
-    font-size: 60px;
-  }
   #recarregar_pagina {
     /* displays: flex; */
     flex-direction: column;
@@ -160,20 +149,31 @@
     text-align: center;
   }
 
+  #sobre_o_site_link,
   #aposte_ja {
     display: none;
   }
   .nome_loteria {
     font-size: 3.3rem;
   }
+  .numbers {
+    line-height: 110px;
+    width: 110px;
+    font-size: 60px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .nome_loteria {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .nome_loteria > img {
     height: 50px;
+  }
+  .numbers {
+    line-height: 100px;
+    width: 100px;
+    font-size: 60px;
   }
 
   #jogo {

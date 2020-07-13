@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_lotofacil.css">
 
-    <title>Jogos da Megasena</title>
+    <title>Jogos da Lotofácil</title>
 </head>
 <script src="https://unpkg.com/feather-icons"></script>
 
@@ -57,11 +57,10 @@
     </nav>
     <main class="main_bg d-flex flex-column">
 
-
         <section class="show_numbers">
             <article class="mb-3 show_logo d-flex flex-column align-items-center padding_large">
                 <div class="txt_padrao_light mb-0">Gerador de números para jogos na loteria</div>
-                <div class="nome_loteria mb-2"><img src="img/shamrock.svg" alt="" class="mr-2"><em>MEGA-SENA</em></div>
+                <div class="nome_loteria mb-2"><img src="img/shamrock.svg" alt="" class="mr-2"><em>LOTOFÁCIL</em></div>
             </article>
 
             <!-- NUMEROS -->
@@ -95,21 +94,15 @@
                 <aside id="novos_jogos_opcoes" class="d-flex align-items-center">
                     <div>
                         <p class="mb-0"><small>Novo jogo aleatório:</small></p>
-                        <button id="gerar_novos_numeros" onclick="location.reload()" class="btn btn-light btn-sm rounded-pill px-4"><strong>Novo jogo de 6 dezenas!</strong></button>
+                        <button id="gerar_novos_numeros" onclick="location.reload()" class="btn btn-light btn-sm rounded-pill px-4"><strong>Novo jogo de 15 dezenas!</strong></button>
                     </div>
 
                     <div id="opcoes_dezenas" class="ml-4">
                         <p class="mb-0"><small>Dezenas:</small></p>
-                        <button id="dez_06" onclick="location.reload()" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
-                        <button id="dez_07" onclick="gerar_numeros(7, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
-                        <button id="dez_08" onclick="gerar_numeros(8, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">08</button>
-                        <button id="dez_09" onclick="gerar_numeros(9, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">09</button>
-                        <button id="dez_10" onclick="gerar_numeros(10, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">10</button>
-                        <button id="dez_11" onclick="gerar_numeros(11, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">11</button>
-                        <button id="dez_12" onclick="gerar_numeros(12, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">12</button>
-                        <button id="dez_13" onclick="gerar_numeros(13, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">13</button>
-                        <button id="dez_14" onclick="gerar_numeros(14, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">14</button>
-                        <button id="dez_15" onclick="gerar_numeros(15, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">15</button>
+                        <button id="dez_06" onclick="location.reload()" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">15</button>
+                        <button id="dez_07" onclick="gerar_numeros(16, 25)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">16</button>
+                        <button id="dez_08" onclick="gerar_numeros(17, 25)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">17</button>
+                        <button id="dez_09" onclick="gerar_numeros(18, 25)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">18</button>
                     </div>
                 </aside>
             </article>
@@ -130,18 +123,13 @@
             <h4>Escolha mais dezenas:</h4>
             <p>Você tem a opção de escolher mais dezenas para os jogos:</p>
             <div class="text-center">
-                <button onclick="location.reload()" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill dezena_active_dark">06</button>
-                <button onclick="gerar_numeros(7, 60)" type="button" class="btn btn-lg  btn-outline-dark px-3 m-2 rounded-pill ">07</button>
-                <button onclick="gerar_numeros(8, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">08</button>
-                <!-- <button onclick="gerar_numeros(9, 60)" type="button" class="btn btn-lg  btn-outline-dark px-3 m-2 rounded-pill ">09</button>
-                <button onclick="gerar_numeros(10, 60)" type="button" class="btn btn-lg  btn-outline-dark px-3 m-2 rounded-pill ">10</button>
-                <button onclick="gerar_numeros(11, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">11</button>
-                <button onclick="gerar_numeros(12, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">12</button>
-                <button onclick="gerar_numeros(13, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">13</button>
-                <button onclick="gerar_numeros(14, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">14</button>
-                <button onclick="gerar_numeros(15, 60)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">15</button> -->
+                <button onclick="location.reload()" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill dezena_active_dark">15</button>
+                <button onclick="gerar_numeros(16, 25)" type="button" class="btn btn-lg  btn-outline-dark px-3 m-2 rounded-pill ">16</button>
+                <button onclick="gerar_numeros(17, 25)" type="button" class="btn btn-lg btn-outline-dark px-3 m-2 rounded-pill ">17</button>
+                <button onclick="gerar_numeros(18, 25)" type="button" class="btn btn-lg  btn-outline-dark px-3 m-2 rounded-pill ">18</button>
+
             </div>
-            <p class="legenda">Acesse a versão Desktop desse site para ter acesso a todas as 15 dezenas possíveis!</p>
+            <!-- <p class="legenda">Acesse a versão Desktop desse site para ter acesso a todas as 18 dezenas possíveis!</p> -->
             <hr>
         </article>
         <article>
@@ -172,7 +160,7 @@
 <script src="js/gerar_numeros.js"></script>
 <script src="js/exibir_numeros.js"></script>
 <script>
-    $("#btn_megasena").addClass("btn_active");
+    $("#btn_lotofacil").addClass("btn_active");
     feather.replace();
 
     // mudar a classe ACTIVE
@@ -199,7 +187,7 @@
     }
 
     // gerar os primeiros numeros
-    gerar_numeros(6, 60);
+    gerar_numeros(15, 25);
 </script>
 
 

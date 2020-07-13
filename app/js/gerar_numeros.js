@@ -4,14 +4,14 @@ function gerar_novos_numeros() {
 }
 
 // function generate random numbers between 1 and 60
-function gerar_numeros(dezenas) {
+function gerar_numeros(dezenas, numero_limite) {
     let count = dezenas;
 
     let jogo = [];
     let ehigual;
 
     while (count > 0) {
-        numero = Math.floor(Math.random() * 60) + 1;
+        numero = Math.floor(Math.random() * numero_limite) + 1;
         ehigual = false;
 
         jogo.forEach(function (n) {

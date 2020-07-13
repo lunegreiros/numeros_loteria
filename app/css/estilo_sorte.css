@@ -1,7 +1,7 @@
 .main_bg {
-  background: #0e67b5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0e67b5, #3cb5af); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0e67b5, #3cb5af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a73737; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #601f1f, #9b2727); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #601f1f, #9b2727); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   min-height: calc(97vh - 60px);
   height: auto;
@@ -131,14 +131,7 @@
 }
 
 /* MEdia */
-@media screen and (max-width: 1440px) {
-  .numbers {
-    line-height: 110px;
-    width: 110px;
-    font-size: 60px;
-  }
-}
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   #opcoes_dezenas,
   #sobre_o_site_link {
     display: none;
@@ -170,10 +163,15 @@
 
 @media screen and (max-width: 425px) {
   .nome_loteria {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .nome_loteria > img {
     height: 50px;
+  }
+  .numbers {
+    line-height: 100px;
+    width: 100px;
+    font-size: 60px;
   }
 
   #jogo {
