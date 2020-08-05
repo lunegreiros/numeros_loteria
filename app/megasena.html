@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="geração de números aleatórios para jogos da loteria na mega-sena e dicas de como aumentar suas chances para os maiores prêmios em dinheiro">
-    <meta name="keywords" content="mega sena, mega sena acumulou, mega sena aposta, mega sena resultado, chances mega sena, jogos mega sena">
+    <meta name="description"
+        content="geração de números aleatórios para jogos da loteria na mega-sena e dicas de como aumentar suas chances para os maiores prêmios em dinheiro">
+    <meta name="keywords"
+        content="mega sena, mega sena acumulou, mega sena aposta, mega sena resultado, chances mega sena, jogos mega sena">
     <meta name="author" content="Luke Negreiros">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
@@ -21,14 +24,14 @@
 
 <body>
     <!-- navbar temp -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Listagem do MENU -->
+            <!-- Listagem do MENU
             <div class="d-flex justify-content-between flex-fill">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -54,21 +57,22 @@
                     </li>
                 </ul>
                 <div class="navbar-nav">
-                    <!-- <li class="nav-item"><a class="nav-link text-dark" href="#"><small>share</small></a></li> -->
-                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <!-- <li class="nav-item"><a class="nav-link text-dark" href="#"><small>share</small></a></li> 
+                    <!-- Go to www.addthis.com/dashboard to customize your tools 
                     <div class="addthis_inline_share_toolbox"></div>
                 </div>
             </div>
         </div>
 
-    </nav>
+    </nav> -->
     <main class="main_bg d-flex flex-column">
 
 
         <section class="show_numbers">
             <article class="mb-3 show_logo d-flex flex-column align-items-center padding_large">
                 <div class="txt_padrao_light mb-0">Gerador de números para jogos na loteria</div>
-                <div class="nome_loteria mb-2"><img src="img/shamrock.svg" alt="trevo-4-folhas" class="mr-2"><em>MEGA-SENA</em></div>
+                <div class="nome_loteria mb-2"><img src="img/shamrock.svg" alt="trevo-4-folhas"
+                        class="mr-2"><em>MEGA-SENA</em></div>
             </article>
 
             <!-- NUMEROS -->
@@ -102,28 +106,42 @@
                     </div>
                     <div id="aposte_ja">
                         <p class="mb-0"><small>Faça seu jogo no site <strong>OFICIAL</strong> da Caixa!</small></p>
-                        <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank" class="btn btn-light btn-sm rounded-pill px-4" style="color: black">Aposte já!</a>
+                        <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank"
+                            class="btn btn-light btn-sm rounded-pill px-4" style="color: black"><strong>Aposte
+                                já!</strong></a>
                     </div>
 
                 </aside>
                 <aside id="novos_jogos_opcoes" class="d-flex align-items-center">
                     <div>
                         <p class="mb-0"><small>Novo jogo aleatório:</small></p>
-                        <button id="gerar_novos_numeros" onclick="location.reload()" class="btn btn-light btn-sm rounded-pill px-4"><strong>Novo jogo de 6 dezenas!</strong></button>
+                        <button id="gerar_novos_numeros" onclick="location.reload()"
+                            class="btn btn-light btn-sm rounded-pill px-4"><strong>Novo jogo de 6
+                                dezenas!</strong></button>
                     </div>
 
                     <div id="opcoes_dezenas" class="ml-4">
                         <p class="mb-0"><small>Dezenas:</small></p>
-                        <button id="dez_06" onclick="location.reload()" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
-                        <button id="dez_07" onclick="gerar_numeros(7, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
-                        <button id="dez_08" onclick="gerar_numeros(8, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">08</button>
-                        <button id="dez_09" onclick="gerar_numeros(9, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">09</button>
-                        <button id="dez_10" onclick="gerar_numeros(10, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">10</button>
-                        <button id="dez_11" onclick="gerar_numeros(11, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">11</button>
-                        <button id="dez_12" onclick="gerar_numeros(12, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">12</button>
-                        <button id="dez_13" onclick="gerar_numeros(13, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">13</button>
-                        <button id="dez_14" onclick="gerar_numeros(14, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">14</button>
-                        <button id="dez_15" onclick="gerar_numeros(15, 60)" type="button" class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">15</button>
+                        <button id="dez_06" onclick="location.reload()" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
+                        <button id="dez_07" onclick="gerar_numeros(7, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
+                        <button id="dez_08" onclick="gerar_numeros(8, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">08</button>
+                        <button id="dez_09" onclick="gerar_numeros(9, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">09</button>
+                        <button id="dez_10" onclick="gerar_numeros(10, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">10</button>
+                        <button id="dez_11" onclick="gerar_numeros(11, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">11</button>
+                        <button id="dez_12" onclick="gerar_numeros(12, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">12</button>
+                        <button id="dez_13" onclick="gerar_numeros(13, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">13</button>
+                        <button id="dez_14" onclick="gerar_numeros(14, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">14</button>
+                        <button id="dez_15" onclick="gerar_numeros(15, 60)" type="button"
+                            class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">15</button>
                     </div>
                 </aside>
             </article>
@@ -139,41 +157,69 @@
         <div class="ad_ret_medio mx-auto float-sm-right mt-3">300 x 250</div>
         <article class="mt-3 px-3">
 
-            <h4>Dicas sobre o aplicativo</h4>
-            <p class="text-size-2">O site <strong>jogos da mega-sena</strong> é um aplicativo web com um gerador de números aleatórios para jogos da mega-sena. Ele não possui nenhum vínculo com a <strong>CAIXA Econômica Federal</strong> e também <span style="color: red">não realiza qualquer aposta</span>. Para jogar, acesse o site <strong>OFICIAL</strong> da <a href="https://www.loteriasonline.caixa.gov.br" target="_blank">Caixa Econômica Federal</a> e siga as instruções diretamente no <a href="https://www.loteriasonline.caixa.gov.br" target="_blank">site oficial</a>! Aqui você encontra dicas de jogos, como funcionam os jogos, as chances de cada jogo e muito mais!</p>
+            <h1>Dicas sobre o aplicativo</h1>
+            <p class="text-size-2">O site <strong>jogos da mega-sena</strong> é um aplicativo web com um gerador de
+                números aleatórios para jogos da mega-sena. Ele não possui nenhum vínculo com a <strong>CAIXA Econômica
+                    Federal</strong> e também <span style="color: red">não realiza qualquer aposta</span>. Para jogar,
+                acesse o site <strong>OFICIAL</strong> da <a href="https://www.loteriasonline.caixa.gov.br"
+                    target="_blank">Caixa Econômica Federal</a> e siga as instruções diretamente no <a
+                    href="https://www.loteriasonline.caixa.gov.br" target="_blank">site oficial</a>! Aqui você encontra
+                dicas de jogos, como funcionam os jogos, as chances de cada jogo e muito mais!</p>
             <hr>
         </article>
         <article id="opcoes_dezenas_dark" class=" px-3">
-            <h4>Escolha mais dezenas para a mega-sena:</h4>
-            <p class="text-size-2">Você tem a opção de escolher mais dezenas para os jogos ( os preços dos jogos constam no <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">site oficial</a> ):</p>
+            <h1>Escolha mais dezenas para a mega-sena:</h1>
+            <p class="text-size-2">Você tem a opção de escolher mais dezenas para os jogos ( os preços dos jogos constam
+                no <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">site
+                    oficial</a> ):</p>
             <div class="text-center">
-                <button onclick="location.reload()" type="button" class="btn btn-sm btn-outline-dark px-2 m-1 rounded-pill dezena_active_dark">06</button>
-                <button onclick="gerar_numeros(7, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">07</button>
-                <button onclick="gerar_numeros(8, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">08</button>
-                <button onclick="gerar_numeros(9, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">09</button>
-                <button onclick="gerar_numeros(10, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">10</button>
-                <button onclick="gerar_numeros(11, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">11</button>
-                <button onclick="gerar_numeros(12, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">12</button>
-                <button onclick="gerar_numeros(13, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">13</button>
-                <button onclick="gerar_numeros(14, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">14</button>
-                <button onclick="gerar_numeros(15, 60)" type="button" class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">15</button>
+                <button onclick="location.reload()" type="button"
+                    class="btn btn-sm btn-outline-dark px-2 m-1 rounded-pill dezena_active_dark">06</button>
+                <button onclick="gerar_numeros(7, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">07</button>
+                <button onclick="gerar_numeros(8, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">08</button>
+                <button onclick="gerar_numeros(9, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">09</button>
+                <button onclick="gerar_numeros(10, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">10</button>
+                <button onclick="gerar_numeros(11, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">11</button>
+                <button onclick="gerar_numeros(12, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">12</button>
+                <button onclick="gerar_numeros(13, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">13</button>
+                <button onclick="gerar_numeros(14, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">14</button>
+                <button onclick="gerar_numeros(15, 60)" type="button"
+                    class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">15</button>
             </div>
             <hr>
         </article>
         <article class=" px-3">
-            <h4>Como funciona os jogos:</h4>
-            <p class="text-size-2">Você escolhe entre 6 e 15 dezenas para concorrer com prêmios milionários. Você ainda pode ganhar prêmios em dinheiro com 4 ou 5 acertos! Os sorteios são reailzados duas vezes por semana. Aproveite, aposte na sua sorte!</p>
+            <h1>Como funciona os jogos:</h1>
+            <p class="text-size-2">Você escolhe entre 6 e 15 dezenas para concorrer com prêmios milionários. Você ainda
+                pode ganhar prêmios em dinheiro com 4 ou 5 acertos! Os sorteios são reailzados duas vezes por semana.
+                Aproveite, aposte na sua sorte!</p>
             <hr>
         </article>
         <article class=" px-3">
-            <h4>Sobre a premiação:</h4>
-            <p class="text-size-2">O prêmio corresponde a uma certa porcentagem da arrecadação no período, ou seja, o prêmio pago pode <strong>aumentar</strong> e para receber o prêmio em dinheiro basta se dirigir a uma das casas lotéricas com o jogo em mãos.</p>
-            <p class="text-size-2">Prêmios acumulados acontecem quando não há vencedores nos jogos anteriores. Os valores pagos vão se acumulando na faixa de prêmios correspondentes (sena, quina e quadra).</p>
+            <h1>Sobre a premiação:</h1>
+            <p class="text-size-2">O prêmio corresponde a uma certa porcentagem da arrecadação no período, ou seja, o
+                prêmio pago pode <strong>aumentar</strong> e para receber o prêmio em dinheiro basta se dirigir a uma
+                das casas lotéricas com o jogo em mãos.</p>
+            <p class="text-size-2">Prêmios acumulados acontecem quando não há vencedores nos jogos anteriores. Os
+                valores pagos vão se acumulando na faixa de prêmios correspondentes (sena, quina e quadra).</p>
             <hr>
             <h1>Mas quais sãos as suas chances na Mega-Sena:</h1>
-            <p class="text-size-2">Quanto mais dezenas apostadas, melhores são as chances (claro!), porém como é de se esperar o preço por cada jogo aumenta de modo correspondente. Portanto cuidado em simplesmente aumentar aumentar as dezenas, pois o risco associado ao preço aumenta consideravelmente. </p>
-            <h5>De qualquer forma, existem algumas dicas para aumentar as suas chances; <strong>veja mais adiante!</strong></h5>
-            <p class="text-size-2">O ideal é se divertir com as apostas (e correr o risco de ganhar, oras, porque não!) mas sem comprometer a receita da família ou alimentar um vício em jogos. veja abaixo, quais são as suas<strong>chances</strong> para os jogos da mega-sena:</p>
+            <p class="text-size-2">Quanto mais dezenas apostadas, melhores são as chances (claro!), porém como é de se
+                esperar o preço por cada jogo aumenta de modo correspondente. Portanto cuidado em simplesmente aumentar
+                aumentar as dezenas, pois o risco associado ao preço aumenta consideravelmente. </p>
+            <h5>De qualquer forma, existem algumas dicas para aumentar as suas chances; <strong>veja mais
+                    adiante!</strong></h5>
+            <p class="text-size-2">O ideal é se divertir com as apostas (e correr o risco de ganhar, oras, porque não!)
+                mas sem comprometer a receita da família ou alimentar um vício em jogos. veja abaixo, quais são as
+                suas<strong>chances</strong> para os jogos da mega-sena:</p>
             <ul>
                 <li>6 dezenas = 1 acerto em 50 milhões</li>
                 <li>7 dezenas = 1 acerto em 7 milhões</li>
@@ -181,9 +227,12 @@
                 <li>15 dezenas = 1 acerto em 10 mil</li>
             </ul>
             <p class="text-size-2">
-                Mais uma vez, cuidado; uma aposta de 15 dezenas custa mais de R$ 22mil. Você está disposto a arriscar assim?! Por um jogo?! Agora que você sabe as suas chances, que tal fazer uma aposta?
+                Mais uma vez, cuidado; uma aposta de 15 dezenas custa mais de R$ 22mil. Você está disposto a arriscar
+                assim?! Por um jogo?! Agora que você sabe as suas chances, que tal fazer uma aposta?
             </p>
-            <div class="text-center"><a type="button" class="btn btn-sm btn-success px-4" href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">Faça uma aposta no site da Caixa</a></div>
+            <div class="text-center"><a type="button" class="btn btn-sm btn-success px-4"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">Faça uma aposta
+                    no site da Caixa</a></div>
             <hr>
         </article>
 
@@ -193,13 +242,25 @@
         <div class="ad_mobile_grande mx-auto">320 x 100</div>
 
         <article class=" px-3">
-            <h4>Mega da Virada:</h4>
-            <p class="text-size-2">Essa é uma modalidade especial que ocorre somente ao final de cada ano e mudam as regas de arrecadação. Aumentando consideravelmente o prêmio pago (cerca de 62% da arrecadação com 6 acertos). Acesse o <a href="http://loterias.caixa.gov.br/wps/portal/loterias/landing/megasena/" target="_blank">site oficial caso queira informações mais precisas</a> para essa modalidade, mas resumindo em poucas palavras: <strong>jogos mais arriscados devem ser feitos nesse período, pois as probabilidades não se alteram! Mas os prêmios deixam as coisas muito mais interessantes.</strong>
+            <h1>Mega da Virada:</h1>
+            <p class="text-size-2">Essa é uma modalidade especial que ocorre somente ao final de cada ano e mudam as
+                regas de arrecadação. Aumentando consideravelmente o prêmio pago (cerca de 62% da arrecadação com 6
+                acertos). Acesse o <a href="http://loterias.caixa.gov.br/wps/portal/loterias/landing/megasena/"
+                    target="_blank">site oficial caso queira informações mais precisas</a> para essa modalidade, mas
+                resumindo em poucas palavras: <strong>jogos mais arriscados devem ser feitos nesse período, pois as
+                    probabilidades não se alteram! Mas os prêmios deixam as coisas muito mais interessantes.</strong>
             </p>
             <hr>
-            <h4>Bolão:</h4>
-            <p class="text-size-2">Outra modalidade permitida é conhecido <strong>bolão</strong>. Consiste em apostas em grupo. Simples assim! As próprias lotéricas organizam jogos e vendem para diversos jogadores que não precisam se conhecer. A vantagem é realizar jogos com mais dezenas e cada apostador paga uma parcela do jogo. Como são vendidos pelo mesmo valor, caso seja premiado, os apostadores receberam a mesma parcela (cota) do prêmio.</p>
-            <p class="text-size-2">Essas cotas possuem limites tanto para o número de cotas quanto os valores a serem pagos por jogo/ apostador; Por exemplo, 6 dezenas aceita um máximo de 9 cotas. 15 dezenas aceita o máximo de 100 cotas para jogos de $200,00 até os $22mil. Como as combinações são muitas (mas muitas mesmo!) o melhor é ir até a lotérica e escolher seus jogos.</p>
+            <h1>Bolão:</h1>
+            <p class="text-size-2">Outra modalidade permitida é conhecido <strong>bolão</strong>. Consiste em apostas em
+                grupo. Simples assim! As próprias lotéricas organizam jogos e vendem para diversos jogadores que não
+                precisam se conhecer. A vantagem é realizar jogos com mais dezenas e cada apostador paga uma parcela do
+                jogo. Como são vendidos pelo mesmo valor, caso seja premiado, os apostadores receberam a mesma parcela
+                (cota) do prêmio.</p>
+            <p class="text-size-2">Essas cotas possuem limites tanto para o número de cotas quanto os valores a serem
+                pagos por jogo/ apostador; Por exemplo, 6 dezenas aceita um máximo de 9 cotas. 15 dezenas aceita o
+                máximo de 100 cotas para jogos de $200,00 até os $22mil. Como as combinações são muitas (mas muitas
+                mesmo!) o melhor é ir até a lotérica e escolher seus jogos.</p>
             <div class="alert alert-info" role="alert">
                 Acompanhe as nossas dicas no final dessa página antes de fazer o seu jogo.
             </div>
@@ -211,22 +272,40 @@
 
         <article class=" px-3">
             <h1>Dica de ouro</h1>
-            <p class="text-size-2">Apesar da facilidade de fazer jogos pela internet, visite a lotérica pessoalmente e tire suas dúvidas sobre jogos do tipo <strong>bolão (sobre cotas, preços e mais dezenas!)</strong>. <strong>Esqueça a teimosinha!</strong> Recolha a contribuição dos membros de sua família ou amigos e faça sua aposta lá. Ninguém vai tirar suas dúvidas no site. E só com o tempo, quando estiver acostumado com as modalidades e dezenas, você pode fazer suas apostas online!</p>
+            <p class="text-size-2">Apesar da facilidade de fazer jogos pela internet, visite a lotérica pessoalmente e
+                tire suas dúvidas sobre jogos do tipo <strong>bolão (sobre cotas, preços e mais dezenas!)</strong>.
+                <strong>Esqueça a teimosinha!</strong> Recolha a contribuição dos membros de sua família ou amigos e
+                faça sua aposta lá. Ninguém vai tirar suas dúvidas no site. E só com o tempo, quando estiver acostumado
+                com as modalidades e dezenas, você pode fazer suas apostas online!</p>
 
             <hr>
             <h1>Agora as dicas: Como aumentar as minhas chances?</h1>
-            <p class="text-size-2">Essas dicas são baseadas em cálculos de probabilidade e estatísticas, portanto não tem nada de fórmula mágica... por favor! Também não há nada que garanta o grande prêmio! Portanto, fiquem avisados!</p>
-            <p class="text-size-2">E a matemática não está ao nosso favor. É realmente muito difícil ganhar na loteria, como vocês já devem saber. Portanto, vejam o que fazer para aumentar as suas chances:</p>
+            <p class="text-size-2">Essas dicas são baseadas em cálculos de probabilidade e estatísticas, portanto não
+                tem nada de fórmula mágica... por favor! Também não há nada que garanta o grande prêmio! Portanto,
+                fiquem avisados!</p>
+            <p class="text-size-2">E a matemática não está ao nosso favor. É realmente muito difícil ganhar na loteria,
+                como vocês já devem saber. Portanto, vejam o que fazer para aumentar as suas chances:</p>
             <h2>1. Jogar no bolão</h2>
-            <p class="text-size-2">Formando um grupo de 10 pessoas (bolão) para a aposta simples de 8 dezenas, aumentam a probabilidade de 1 acerto em 1,7 milhões.</p>
+            <p class="text-size-2">Formando um grupo de 10 pessoas (bolão) para a aposta simples de 8 dezenas, aumentam
+                a probabilidade de 1 acerto em 1,7 milhões.</p>
             <h2>2. Evite dezenas que já saíram</h2>
-            <p class="text-size-2">Olhe os 5 últimos sorteios e não repita as dezenas que já saíram. As chances de uma dezena sair novamente ocorre a cada 40 sorteios.</p>
+            <p class="text-size-2">Olhe os 5 últimos sorteios e não repita as dezenas que já saíram. As chances de uma
+                dezena sair novamente ocorre a cada 40 sorteios.</p>
             <h2>3. Evite dezenas sequenciais</h2>
-            <p class="text-size-2">Nunca na história da mega-sena aconteceu de uma sequência longa acontecer; por exemplo 9, 10, 11 e 12. Portanto evite sequências desse tamanho</p>
+            <p class="text-size-2">Nunca na história da mega-sena aconteceu de uma sequência longa acontecer; por
+                exemplo 9, 10, 11 e 12. Portanto evite sequências desse tamanho</p>
             <h2>4. Apostas entre membros da familia</h2>
-            <p class="text-size-2">O erro aqui não é a família (claro!) mas como eles fazem as apostas: geralmente cada membro que paga, pode escolher uma dezena! Não deve ser assim! O mérito de cada um é controlado pela quantidade de dinheiro que eles dão para pagar a aposta. O que eles querem é <strong>a melhor aposta!</strong> E pagar pelo jogo não deveria dar o direito de escolha de um número. Portanto, concentre a aposta em uma pessoa que siga essas dicas e use o gerador de números aleatórios</p>
+            <p class="text-size-2">O erro aqui não é a família (claro!) mas como eles fazem as apostas: geralmente cada
+                membro que paga, pode escolher uma dezena! Não deve ser assim! O mérito de cada um é controlado pela
+                quantidade de dinheiro que eles dão para pagar a aposta. O que eles querem é <strong>a melhor
+                    aposta!</strong> E pagar pelo jogo não deveria dar o direito de escolha de um número. Portanto,
+                concentre a aposta em uma pessoa que siga essas dicas e use o gerador de números aleatórios</p>
             <h2>5. Porque usar o gerador de números aleatórios?</h2>
-            <p class="text-size-2">Pois seguem as mesmas regras do sorteio com escolhas sequenciais, não-repetidos e não-determinístico. Caso o jogador tenha dificuldade, dúvidas ou insegurança, use o gerador de números e se quiser faça ajustes. As chances usando esse gerador de números são melhores que jogar dados, por exemplo (sim, tem gente que faz isso!); e nem se incomodam por não possuir números com zero, como vocês já devem ter imaginado, nunca serão escolhidos!</p>
+            <p class="text-size-2">Pois seguem as mesmas regras do sorteio com escolhas sequenciais, não-repetidos e
+                não-determinístico. Caso o jogador tenha dificuldade, dúvidas ou insegurança, use o gerador de números e
+                se quiser faça ajustes. As chances usando esse gerador de números são melhores que jogar dados, por
+                exemplo (sim, tem gente que faz isso!); e nem se incomodam por não possuir números com zero, como vocês
+                já devem ter imaginado, nunca serão escolhidos!</p>
         </article>
 
         <!-- AD -->
@@ -234,26 +313,37 @@
 
         <article class=" px-3">
             <h2>6. Aumentar as dezenas compensa</h2>
-            <p class="text-size-2">É mais caro um jogo com mais dezenas, porém as suas chances aumentam significativamente. Com 15 dezenas, as chances são de 1 acerto em 10 mil. A dica é: faça bolões com familiares para mais dezenas.</p>
+            <p class="text-size-2">É mais caro um jogo com mais dezenas, porém as suas chances aumentam
+                significativamente. Com 15 dezenas, as chances são de 1 acerto em 10 mil. A dica é: faça bolões com
+                familiares para mais dezenas.</p>
             <h2>7. Esqueça datas de aniversário e casamento</h2>
-            <p class="text-size-2">Isso demonstra falta de criatividade, muita dúvida e um certo romantismo ilógico. O melhor é olhar os resultados anteriores e usar esse site para gerar números para os jogos.</p>
+            <p class="text-size-2">Isso demonstra falta de criatividade, muita dúvida e um certo romantismo ilógico. O
+                melhor é olhar os resultados anteriores e usar esse site para gerar números para os jogos.</p>
             <h2>8. Para ganhar é preciso jogar</h2>
-            <p class="text-size-2">Isso é bem óbio (eu sei!) mas quantas pessoas você conhece que fazem planos 'o que eu faria se ganhasse na loteria' mas de fato nunca jogam?</p>
+            <p class="text-size-2">Isso é bem óbio (eu sei!) mas quantas pessoas você conhece que fazem planos 'o que eu
+                faria se ganhasse na loteria' mas de fato nunca jogam?</p>
             <h2>9. Esqueça jogos repetidos</h2>
-            <p class="text-size-2">Isso não aumenta as chances (infelizmente!). É melhor usar as outras dicas desse mesmo site e continuem usando os números aleatórios.</p>
+            <p class="text-size-2">Isso não aumenta as chances (infelizmente!). É melhor usar as outras dicas desse
+                mesmo site e continuem usando os números aleatórios.</p>
         </article>
 
         <!-- AD -->
         <div class="ad_ret_medio mx-auto float-sm-right">300 x 250</div>
         <article class=" px-3">
             <h2>10. Números que não saem</h2>
-            <p class="text-size-2">As dezenas com finais 9 (19, 29, 39...) são as que menos saíram em toda a história da loteria. Não vai ser agora, né?!</p>
+            <p class="text-size-2">As dezenas com finais 9 (19, 29, 39...) são as que menos saíram em toda a história da
+                loteria. Não vai ser agora, né?!</p>
             <h2>Extra: Os números dourados</h2>
-            <p class="text-size-2">Existem 15 dezenas que surgem com uma frequência intrigante: são eles: 05, 07, 13, 14, 16, 25, 28, 29, 37, 38, 43, 44, 53, 54 e 60</p>
+            <p class="text-size-2">Existem 15 dezenas que surgem com uma frequência intrigante: são eles: 05, 07, 13,
+                14, 16, 25, 28, 29, 37, 38, 43, 44, 53, 54 e 60</p>
             <hr>
             <p class="text-size-2">Com essas dicas você se sente mais confiante?</p>
-            <div class="text-center"><a type="button" class="btn btn-sm btn-success px-4 mb-2" href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">Faça uma aposta no site da Caixa</a></div>
-            <p class="text-size-2">Chame seus amigos, familiares, aumentem as dezenas, organize bolões mas com responsabilidade. Acesse o nosso site com regularidade pois o aplicativo gera números aleatórios para ajudar na escolha das dezenas. E boa sorte!</p>
+            <div class="text-center"><a type="button" class="btn btn-sm btn-success px-4 mb-2"
+                    href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">Faça uma aposta
+                    no site da Caixa</a></div>
+            <p class="text-size-2">Chame seus amigos, familiares, aumentem as dezenas, organize bolões mas com
+                responsabilidade. Acesse o nosso site com regularidade pois o aplicativo gera números aleatórios para
+                ajudar na escolha das dezenas. E boa sorte!</p>
 
 
             <!-- AD -->
@@ -276,9 +366,15 @@
 </body>
 
 <!-- Jquery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 <script src="js/gerar_numeros.js"></script>
 <script src="js/exibir_numeros.js"></script>
 <script>
