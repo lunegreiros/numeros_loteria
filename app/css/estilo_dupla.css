@@ -1,3 +1,9 @@
+h1{
+  font-size: 1.5rem;
+  }
+  h2{
+  font-size: 1.2rem;
+  }
 .main_bg {
   background: #ed213a; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #93291e, #ed213a); /* Chrome 10-25, Safari 5.1-6 */
