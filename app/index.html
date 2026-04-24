@@ -136,14 +136,14 @@
                 <aside id="novos_jogos_opcoes" class="d-flex align-items-center">
                     <div>
                         <p class="mb-0"><small>Novo jogo aleatório:</small></p>
-                        <button id="gerar_novos_numeros" onclick="location.reload()"
+                        <button id="gerar_novos_numeros" onclick="location.href='?dezenas=6'"
                             class="btn btn-light btn-sm rounded-pill px-4"><strong>Novo jogo de 6
                                 dezenas!</strong></button>
                     </div>
 
                     <div id="opcoes_dezenas" class="ml-4">
                         <p class="mb-0"><small>Dezenas:</small></p>
-                        <button id="dez_06" onclick="location.reload()" type="button"
+                        <button id="dez_06" onclick="location.href='?dezenas=6'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
                         <button id="dez_07" onclick="location.href='?dezenas=7'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
@@ -427,13 +427,27 @@
     const dezenas = parseInt(params.get('dezenas')) || 6;
     gerar_numeros(dezenas, 60);
 
-    // marcar botao ativo baseado na URL
-    if (dezenas !== 6) {
-        const btnAtivo = document.getElementById('dez_' + String(dezenas).padStart(2, '0'));
-        if (btnAtivo) {
-            var current = document.getElementsByClassName("dezena_active");
-            if (current[0]) current[0].className = current[0].className.replace(" dezena_active", "");
-            btnAtivo.className += " dezena_active";
+    // marcar botoes ativos (light e dark)
+    var current_light = document.getElementsByClassName("dezena_active");
+    if (current_light[0]) current_light[0].className = current_light[0].className.replace(" dezena_active", "");
+
+    var current_dark = document.getElementsByClassName("dezena_active_dark");
+    if (current_dark[0]) current_dark[0].className = current_dark[0].className.replace(" dezena_active_dark", "");
+
+    const btnAtivo = document.getElementById('dez_' + String(dezenas).padStart(2, '0'));
+    if (btnAtivo) {
+        btnAtivo.className += " dezena_active";
+    }
+
+    // marcar botao ativo na seção dark (sem ID, procura pelo texto)
+    const opcoes_dark = document.getElementById("opcoes_dezenas_dark");
+    if (opcoes_dark) {
+        const btns_dark = opcoes_dark.getElementsByClassName("btn");
+        for (var i = 0; i < btns_dark.length; i++) {
+            if (btns_dark[i].textContent.trim() === String(dezenas).padStart(2, '0')) {
+                btns_dark[i].className += " dezena_active_dark";
+                break;
+            }
         }
     }
 </script>
