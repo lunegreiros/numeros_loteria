@@ -108,8 +108,8 @@ h1{
   padding-top: 10%;
 }
 .exibir_numeros {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -185,4 +185,39 @@ h1{
   #jogo {
     width: 90%;
   }
+}
+
+/* ===== TEMA DUPLA SENA - conteudo_textos overrides ===== */
+.limitar_largura h1::after {
+  background: linear-gradient(to right, #93291e, #ed213a);
+}
+.limitar_largura h2 {
+  color: #ed213a;
+}
+.limitar_largura h5 {
+  background: rgba(237, 33, 58, 0.08);
+  border-left-color: #ed213a;
+}
+.limitar_largura ul li::before {
+  background: linear-gradient(to right, #93291e, #ed213a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.limitar_largura .alert {
+  background: rgba(237, 33, 58, 0.07);
+  border-color: rgba(237, 33, 58, 0.4);
+  color: #ed213a !important;
+}
+.limitar_largura a:not(.btn) {
+  color: #ed213a;
+}
+.limitar_largura a:not(.btn):hover {
+  color: #93291e;
+}
+.limitar_largura .btn-success {
+  background: linear-gradient(to right, #93291e, #ed213a) !important;
+}
+.limitar_largura .btn-success:hover {
+  box-shadow: 0 8px 28px rgba(237, 33, 58, 0.45);
 }

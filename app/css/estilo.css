@@ -108,8 +108,8 @@ font-size: 1.2rem;
   padding-top: 10%;
 }
 .exibir_numeros {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   max-width: 1440px;
   margin: 0 auto;
 }
