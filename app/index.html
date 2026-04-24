@@ -145,23 +145,23 @@
                         <p class="mb-0"><small>Dezenas:</small></p>
                         <button id="dez_06" onclick="location.reload()" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill dezena_active">06</button>
-                        <button id="dez_07" onclick="gerar_numeros(7, 60)" type="button"
+                        <button id="dez_07" onclick="location.href='?dezenas=7'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">07</button>
-                        <button id="dez_08" onclick="gerar_numeros(8, 60)" type="button"
+                        <button id="dez_08" onclick="location.href='?dezenas=8'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">08</button>
-                        <button id="dez_09" onclick="gerar_numeros(9, 60)" type="button"
+                        <button id="dez_09" onclick="location.href='?dezenas=9'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">09</button>
-                        <button id="dez_10" onclick="gerar_numeros(10, 60)" type="button"
+                        <button id="dez_10" onclick="location.href='?dezenas=10'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">10</button>
-                        <button id="dez_11" onclick="gerar_numeros(11, 60)" type="button"
+                        <button id="dez_11" onclick="location.href='?dezenas=11'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">11</button>
-                        <button id="dez_12" onclick="gerar_numeros(12, 60)" type="button"
+                        <button id="dez_12" onclick="location.href='?dezenas=12'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">12</button>
-                        <button id="dez_13" onclick="gerar_numeros(13, 60)" type="button"
+                        <button id="dez_13" onclick="location.href='?dezenas=13'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">13</button>
-                        <button id="dez_14" onclick="gerar_numeros(14, 60)" type="button"
+                        <button id="dez_14" onclick="location.href='?dezenas=14'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">14</button>
-                        <button id="dez_15" onclick="gerar_numeros(15, 60)" type="button"
+                        <button id="dez_15" onclick="location.href='?dezenas=15'" type="button"
                             class="btn btn-sm btn-outline-light px-2 mx-1 rounded-pill ">15</button>
                     </div>
                 </aside>
@@ -196,25 +196,25 @@
                 no <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/mega-sena" target="_blank">site
                     oficial</a> ):</p>
             <div class="text-center">
-                <button onclick="location.reload()" type="button"
+                <button onclick="location.href='?dezenas=6'" type="button"
                     class="btn btn-sm btn-outline-dark px-2 m-1 rounded-pill dezena_active_dark">06</button>
-                <button onclick="gerar_numeros(7, 60)" type="button"
+                <button onclick="location.href='?dezenas=7'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">07</button>
-                <button onclick="gerar_numeros(8, 60)" type="button"
+                <button onclick="location.href='?dezenas=8'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">08</button>
-                <button onclick="gerar_numeros(9, 60)" type="button"
+                <button onclick="location.href='?dezenas=9'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">09</button>
-                <button onclick="gerar_numeros(10, 60)" type="button"
+                <button onclick="location.href='?dezenas=10'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">10</button>
-                <button onclick="gerar_numeros(11, 60)" type="button"
+                <button onclick="location.href='?dezenas=11'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">11</button>
-                <button onclick="gerar_numeros(12, 60)" type="button"
+                <button onclick="location.href='?dezenas=12'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">12</button>
-                <button onclick="gerar_numeros(13, 60)" type="button"
+                <button onclick="location.href='?dezenas=13'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">13</button>
-                <button onclick="gerar_numeros(14, 60)" type="button"
+                <button onclick="location.href='?dezenas=14'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">14</button>
-                <button onclick="gerar_numeros(15, 60)" type="button"
+                <button onclick="location.href='?dezenas=15'" type="button"
                     class="btn btn-sm  btn-outline-dark px-2 m-1 rounded-pill ">15</button>
             </div>
             <hr>
@@ -422,8 +422,20 @@
         });
     }
 
-    // gerar os primeiros numeros
-    gerar_numeros(6, 60);
+    // ler parametro de dezenas da URL e gerar os numeros
+    const params = new URLSearchParams(window.location.search);
+    const dezenas = parseInt(params.get('dezenas')) || 6;
+    gerar_numeros(dezenas, 60);
+
+    // marcar botao ativo baseado na URL
+    if (dezenas !== 6) {
+        const btnAtivo = document.getElementById('dez_' + String(dezenas).padStart(2, '0'));
+        if (btnAtivo) {
+            var current = document.getElementsByClassName("dezena_active");
+            if (current[0]) current[0].className = current[0].className.replace(" dezena_active", "");
+            btnAtivo.className += " dezena_active";
+        }
+    }
 </script>
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
