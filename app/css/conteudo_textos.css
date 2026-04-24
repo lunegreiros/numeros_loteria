@@ -253,3 +253,58 @@ footer.bg-light p {
     font-size: 0.9rem !important;
   }
 }
+
+/* ===== TRUSTPILOT CTA ===== */
+#tp-review {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 1.25rem 1rem 0.75rem;
+  text-align: center;
+}
+
+#tp-review-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#tp-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+#tp-brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #191919;
+  letter-spacing: -0.01em;
+}
+
+#tp-review-text {
+  font-size: 0.85rem;
+  color: #888888;
+  margin: 0;
+}
+
+#btn-tp-review {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.45rem 1.4rem;
+  border: 1.5px solid #00B67A;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #00B67A;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  background: #ffffff;
+}
+
+#btn-tp-review:hover {
+  background: #00B67A;
+  color: #ffffff;
+  text-decoration: none;
+}
