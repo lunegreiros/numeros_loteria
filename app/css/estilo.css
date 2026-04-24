@@ -9,7 +9,7 @@ font-size: 1.2rem;
   background: -webkit-linear-gradient(to right, #0e67b5, #3cb5af); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0e67b5, #3cb5af); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  min-height: calc(97vh - 60px);
+  min-height: calc(97vh - 200px);
   height: auto;
   width: 100%;
 }
