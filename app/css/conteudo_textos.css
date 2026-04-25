@@ -264,10 +264,11 @@ footer.bg-light p {
 }
 
 #tp-review-wrap {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  width: 100%;
 }
 
 #tp-brand {
@@ -283,6 +284,14 @@ footer.bg-light p {
   letter-spacing: -0.01em;
 }
 
+#tp-content-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #tp-review-text {
   font-size: 0.85rem;
   color: #888888;
@@ -291,7 +300,6 @@ footer.bg-light p {
 
 #btn-tp-review {
   display: inline-block;
-  margin-top: 0.25rem;
   padding: 0.45rem 1.4rem;
   border: 1.5px solid #00B67A;
   border-radius: 20px;
@@ -305,6 +313,26 @@ footer.bg-light p {
 
 #btn-tp-review:hover {
   background: #00B67A;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#btn-tp-score {
+  display: inline-block;
+  padding: 0.45rem 1.4rem;
+  background: #00B67A;
+  border: 1.5px solid #00B67A;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+#btn-tp-score:hover {
+  background: #009966;
+  border-color: #009966;
   color: #ffffff;
   text-decoration: none;
 }
