@@ -1,0 +1,27 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+
+  <!-- Top banner -->
+  <rect width="1200" height="150" fill="#00B67A"/>
+
+  <!-- Main text -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    Gerador de Números
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="#CCCCCC">
+    Aumente suas Chances na Loteria
+  </text>
+
+  <!-- Lotteries -->
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#00B67A">
+    Mega-Sena • Lotofácil • Quina • Lotomania • Timemania
+  </text>
+
+  <!-- Website -->
+  <text x="600" y="580" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#FFFFFF">
+    loterica.wapp.dev.br
+  </text>
+</svg>
